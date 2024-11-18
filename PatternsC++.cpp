@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 // int main() {
 //     int n;
 //     cin>>n;
@@ -16,9 +17,20 @@ using namespace std;
 //             col++;
 //         }
 //         cout<<endl;
-//         row++;
+//         row++;       
 //     }
+
+//       /*
+//       5
+//       *
+//       * *
+//       * * *
+//       * * * *
+//       * * * * *
+//       */      
 // }
+
+
 // int main() {
 //     int n;
 //     cin>>n;
@@ -30,12 +42,19 @@ using namespace std;
 //         int col = 1;
 
 //         while(col<=row) {
-//             cout<<n-col+1;
+//             cout<<n-col+1<<" ";
 //             col++;
 //         }
 //         cout<<endl;
 //         row++;
-//     }
+//     }/*
+//     5
+// 5
+// 5 4
+// 5 4 3
+// 5 4 3 2
+// 5 4 3 2 1
+// */
 // }
 
 // int main() {
@@ -58,6 +77,15 @@ using namespace std;
 //         row++;
 //     }
 //     return 0;
+
+//     /*
+//     5
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
+// */
 // }
 
 // int main() {
@@ -77,7 +105,17 @@ using namespace std;
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//     5
+// 1
+// 2 3
+// 3 4 5
+// 4 5 6 7
+// 5 6 7 8 9
+// */
 // }
+
+
 
 // int main() {
 //     int n;
@@ -97,7 +135,17 @@ using namespace std;
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//     5
+// A A A A A
+// B B B B B
+// C C C C C
+// D D D D D
+// E E E E E
+// */
 // }
+
+
 
 // int main() {
 //     int n;
@@ -118,30 +166,47 @@ using namespace std;
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//     5
+// A B C D E
+// A B C D E
+// A B C D E
+// A B C D E
+// A B C D E
+// */
 // }
 
-// int main() {
-//     int n;
-//     cin>>n;
 
-//     int row = 1;
-//     char ch = 'A';
 
-//     while(row<=n) {
+int main() {
+    int n;
+    cin>>n;
 
-//         int col = 1;
+    int row = 1;
+    char ch = 'A';
 
-//         while(col<=n) {
+    while(row<=n) {
+
+        int col = 1;
+
+        while(col<=n) {
             
-//             cout<< ch<<" ";
-//             ch++;
-//             col++;
-//         }
-//         cout<<endl;
-//         row++;
-//     }
-// }
+            cout<< ch<<" ";
+            ch++;
+            col++;
+        }
+        cout<<endl;
+        row++;
+    }
+    /*
+    4
+A B C D
+E F G H
+I J K L
+M N O P
+}
 
+/*
 
 // int main() {
 //     int n;
@@ -436,3 +501,4 @@ int main() {
     }
     return 0;
 }
+*/
