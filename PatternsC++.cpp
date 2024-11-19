@@ -21,7 +21,7 @@ using namespace std;
 //     }
 
 //       /*
-//       5
+//       Output : 5
 //       *
 //       * *
 //       * * *
@@ -48,7 +48,7 @@ using namespace std;
 //         cout<<endl;
 //         row++;
 //     }/*
-//     5
+//    Output :  5
 // 5
 // 5 4
 // 5 4 3
@@ -79,7 +79,7 @@ using namespace std;
 //     return 0;
 
 //     /*
-//     5
+//     Output : 5
 // 1
 // 2 3
 // 4 5 6
@@ -106,7 +106,7 @@ using namespace std;
 //         row++;
 //     }
 //     /*
-//     5
+//     Output : 5
 // 1
 // 2 3
 // 3 4 5
@@ -136,7 +136,7 @@ using namespace std;
 //         row++;
 //     }
 //     /*
-//     5
+//     Output : 5
 // A A A A A
 // B B B B B
 // C C C C C
@@ -167,7 +167,7 @@ using namespace std;
 //         row++;
 //     }
 //     /*
-//     5
+//     Output : 5
 // A B C D E
 // A B C D E
 // A B C D E
@@ -178,35 +178,37 @@ using namespace std;
 
 
 
-int main() {
-    int n;
-    cin>>n;
+// int main() {
+//     int n;
+//     cin>>n;
 
-    int row = 1;
-    char ch = 'A';
+//     int row = 1;
+//     char ch = 'A';
 
-    while(row<=n) {
+//     while(row<=n) {
 
-        int col = 1;
+//         int col = 1;
 
-        while(col<=n) {
+//         while(col<=n) {
             
-            cout<< ch<<" ";
-            ch++;
-            col++;
-        }
-        cout<<endl;
-        row++;
-    }
-    /*
-    4
-A B C D
-E F G H
-I J K L
-M N O P
-}
+//             cout<< ch<<" ";
+//             ch++;
+//             col++;
+//         }
+//         cout<<endl;
+//         row++;
+//     }
+//     /*
+//     Output : 4
+// A B C D
+// E F G H
+// I J K L
+// M N O P
+// */
+// }
 
-/*
+
+
 
 // int main() {
 //     int n;
@@ -230,6 +232,15 @@ M N O P
 //         cout<<endl;
 //         row++;
 //     }
+
+//     /*
+//    Output :  5
+// A B C D E
+// B C D E F
+// C D E F G
+// D E F G H
+// E F G H I
+// */
 // }
 
 
@@ -256,6 +267,14 @@ M N O P
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//     Output : 5
+// A
+// B C
+// D E F
+// G H I J
+// K L M N O
+// */
 // }
 
 
@@ -280,6 +299,14 @@ M N O P
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//    Output : 5
+// A
+// B C
+// C D E
+// D E F G
+// E F G H I
+// */
 // }
 
 
@@ -303,7 +330,16 @@ M N O P
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//     Output : 5
+// E
+// D E
+// C D E
+// B C D E
+// A B C D E
+// */
 // }
+
 
 // int main() {
 //     int n;
@@ -333,7 +369,16 @@ M N O P
 //         cout<<endl;
 //         row++;
 //     }
+//     /*
+//     Output : 5
+//         *
+//       * *
+//     * * *
+//   * * * *
+// * * * * *
+// */
 // }
+
 
 
 // int main() {
@@ -356,8 +401,17 @@ M N O P
 //         cout<<endl;
 //         row--;
 //     }
+//     /*
+//     Output : 4
+// * * * *
+// * * *
+// * *
+// *
+// */
 
 // }
+
+
 
 // int main() {
 
@@ -394,8 +448,18 @@ M N O P
         
 //     }
 //     return 0;
+
+//     /*
+//     Output : 4
+// * * * *
+//   * * *
+//     * *
+//       *
+//         */
    
 // }
+
+
 
 // int main() {
 
@@ -425,7 +489,17 @@ M N O P
 //         row++;
 //     }
 //     return 0;
+
+//     /*
+//     Output : 5
+// 1 1 1 1 1
+//   2 2 2 2
+//     3 3 3
+//       4 4
+//         5
+//         */
 // }
+
 
 
 // int main() {
@@ -461,7 +535,18 @@ M N O P
         
 //     }
 //     return 0;
+
+//     /*
+//     Output : 5
+//         1
+//       1 2 1
+//     1 2 3 2 1 
+//   1 2 3 4 3 2 1
+// 1 2 3 4 5 4 3 2 1
+// */
 // }
+
+
 
 int main() {
     
@@ -501,4 +586,3 @@ int main() {
     }
     return 0;
 }
-*/
