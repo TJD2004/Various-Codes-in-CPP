@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+    Code For Binary Search 
+*/
+
 // Time Complexity of Binary Search is = O(log N)
 
 int binarySearch(int arr[] , int size, int key) {
@@ -45,3 +49,9 @@ int main() {
 
     return 0;
 }
+
+/*
+    Output : 
+            Index of 18 is -1
+            Index of 11 is 4
+*/

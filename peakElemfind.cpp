@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+/*
+   Code to Find Index of Peak Element In Array
+*/
+
 int main() {
 
     // int i = 0;
@@ -37,7 +41,13 @@ int main() {
             ans = i;
         }
     }
-    cout << ans ;
+    cout << "Index of Peak Element in Array : " << ans ;
 
     return 0;
 }
+
+/*
+   Output : 
+            Index of Peak Element in Array : 3
+
+*/

@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
 
-//fibonacci no.
+/*
+    Code to find Fibonacci Series
+*/
+
 int main() {
     int n;
+    cout << "Enter Number : ";
     cin>>n;
     
     int a = 0;
@@ -21,3 +25,9 @@ int main() {
     return 0;
     
 } 
+
+/*
+    Output :
+            Enter Number : 10
+            0 1 1 2 3 5 8 13 21 34 55
+*/

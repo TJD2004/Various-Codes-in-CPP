@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+   Code to Find Peak Index in Mountain array using Binary Search
+*/
+
 int PIoM(int arr[], int n) {
 
     int s = 0;
@@ -29,3 +33,7 @@ int main() {
     
     cout << "Peak Index in Mountain array is  " << PIoM(arr, 5);
 }
+
+/*
+   Output : Peak Index in Mountain array is  3
+*/

@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+    Code to reverse element of Array
+*/
+
 void reverse(int arr[], int n){
 
     int start = 0;
@@ -35,3 +39,9 @@ int main() {
 
     return 0;
 }
+
+/*
+    Output : 
+            7 6 5 3 2 1 
+            9 7 6 5 3 2 1 
+*/

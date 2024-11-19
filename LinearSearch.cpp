@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+   Code for Linear Search
+*/
+
 bool search(int arr[], int size, int key){
 
     for(int i = 0; i<size; i++){
@@ -32,3 +36,10 @@ int main() {
 
     return 0;
 }
+
+/*
+    Output :
+            Enter the value of Key = 5
+            Key is not present
+            
+*/

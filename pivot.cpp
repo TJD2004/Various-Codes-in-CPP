@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+/*
+   Code to Get Pivot
+*/
+
 int getPivot(int arr[] ,int n) {
 
     int s = 0;
@@ -28,3 +32,7 @@ int main() {
 
     cout << "Pivot is " << getPivot(arr, 5) << endl;
 }
+
+/*
+    Output : Pivot is 3
+*/

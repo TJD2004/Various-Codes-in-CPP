@@ -3,12 +3,11 @@
 using namespace std;
 
 
-#include <iostream>
-#include <math.h>
-using namespace std;
+/*
+    Code To Binary To Decimal 
+*/
 
 
-// binary to decimal
 int main() {
 
     int n;
@@ -30,5 +29,10 @@ int main() {
     cout<< ans << endl;
     
 }
+
+/*
+    input : 1011
+    output : 11
+*/
 
 

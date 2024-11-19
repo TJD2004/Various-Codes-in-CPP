@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+    Code to find Enter Number is Prime OR Not
+*/
+
 // int main() {
 //     int n;
 //     cin>>n;
@@ -42,6 +46,7 @@ bool isPrime(int n){
 int main() {
 
     int num;
+    cout << "Enter Number : ";
     cin >> num;
     
     if(isPrime(num)) {

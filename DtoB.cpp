@@ -2,9 +2,13 @@
 #include<math.h>
 using namespace std;
 
+/*
+   Code To convert Decimal to binary
+*/
 
 int main() {
     int n;
+    cout << "Enter Number : ";
     cin >> n;
     
     
@@ -22,3 +26,9 @@ int main() {
     cout << "Answer is "<< ans <<endl;
     return 0;
 }
+
+/*
+   Output : 
+            Enter Number : 34
+            Answer is 100011
+*/

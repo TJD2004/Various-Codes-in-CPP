@@ -1,10 +1,15 @@
 #include <iostream>
 using namespace std;
 
+/*
+   Code to Count No. of 1 in Input BY converting It in Binary
+*/
+
 
 int main() {
     
     int n;
+    cout << "Enter Number : ";
     cin >> n;
 
     int count = 0;
@@ -15,6 +20,13 @@ int main() {
         n = n >> 1;
     }
 
-    cout << count;
+    cout << "No. Of 1 : " << count;
     return 0;
  }
+
+ /*
+    Output : 
+            Enter Number : 33
+            No. Of 1 : 2
+
+ */

@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+	Code to find Triplet in Given Array 
+*/
+
 int main() {
     int n = 10;
     int arr[100] = {10 ,5, 5, 5, 2};
@@ -22,3 +26,7 @@ int main() {
 		}
 	}
 }
+
+/*
+	Output : 5 5 2
+*/

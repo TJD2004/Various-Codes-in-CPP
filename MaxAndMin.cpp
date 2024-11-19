@@ -2,6 +2,10 @@
 #include <climits>
 using namespace std;
 
+/*
+   Code to Find Maximum And Minimum Value In Array
+*/
+
 int getMax( int num[], int n){
     
     int max = INT_MIN;
@@ -36,12 +40,16 @@ int getMin( int num[], int n){
 int main() {
 
     int size;
+    cout << "Enter Size : ";
     cin >> size;
 
     int num[100];
 
+    cout << "Enter Elements To Creat Array : ";
+
     for( int i = 0; i<size; i++ ){
 
+        
         cin >> num[i] ;
     }
 
@@ -50,3 +58,12 @@ int main() {
 
     return 0;
 }
+
+/*
+   output : 
+            Enter Size : 5
+            Enter Elements To Creat Array : 3 4 5 6 2 
+            Maximum value is = 6
+            Minimum value is = 2
+            
+*/

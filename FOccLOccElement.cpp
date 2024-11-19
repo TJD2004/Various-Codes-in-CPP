@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+    Code to find Index of 1st and Last ELement in Array using Binary Search
+*/
+
 int firstOcc(int arr[] ,int n, int key) {
 
     int s = 0 , e = n - 1;
@@ -63,3 +67,10 @@ int main() {
 
     return 0;
 }
+
+/*
+   Output : 
+            First Occurance of 3 is at Index 2
+            Last Occurance of 3 is at Index 10
+
+*/

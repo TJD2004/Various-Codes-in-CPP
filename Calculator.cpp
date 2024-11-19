@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+/*
+   Simple Calulator With 2 input using Switch Case
+*/
+
 int main() {
 
     int a, b;
@@ -40,3 +44,14 @@ int main() {
 
 
 }
+
+/*
+    output : 
+            Enter the value of a 
+            24
+            Enter the value of b 
+            55
+            Enter the operation you want to perform 
+            *
+            1320
+*/

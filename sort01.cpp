@@ -2,6 +2,10 @@
 #include <algorithm>
 using namespace std;
 
+/*
+    Code To Sort O & 1
+*/
+
 
 void printArray(int arr[], int n) {
     for(int i= 0; i<n; i++) {
@@ -43,3 +47,9 @@ int main() {
 
     return 0;
 }
+
+/*
+    Output :
+            0 0 0 0 0 1 1 1 
+
+*/

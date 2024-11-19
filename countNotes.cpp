@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+  Code To count no. of different notes in Amount
+*/
+
 int main() {
 
     int amt;
@@ -31,9 +35,33 @@ int main() {
         case 4 : cout << "Notes = "<< one <<endl;
                     break;
 
+        default : cout << "Invalid Entery" << endl;           
+
     }
     cout << endl;
 
     return 0;
 }
+
+/*
+    Output1 : 
+            Enter the Amount = 32689
+            Enter note you want to count 
+            1 - 100rs.
+            2 - 50rs.
+            3 - 20rs.
+            4 - 1rs.
+            your answer = 5
+            Invalid Entery
+
+    Output2 : 
+            Enter the Amount = 345289
+            Enter note you want to count
+            1 - 100rs.
+            2 - 50rs.
+            3 - 20rs.
+            4 - 1rs.
+            your answer = 3
+            Notes = 1
+*/
 

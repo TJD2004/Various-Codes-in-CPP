@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+   Code To Alternate Swap Elements of Array
+*/
+
 void alterswap(int arr[], int n){
 
     for(int i = 0; i < n; i += 2){
@@ -32,3 +36,9 @@ int main() {
     return 0;
 
 }
+
+/*
+   Output : 
+           4 1 6 2 22 10 
+           4 2 6 5 6 8 9 
+*/

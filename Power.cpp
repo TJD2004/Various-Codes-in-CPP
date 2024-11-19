@@ -2,6 +2,10 @@
 #include <math.h>
 using namespace std;
 
+/*
+    Code To find x to the power y
+*/
+
 
 // int pow(int x, int y) {
 
@@ -28,7 +32,12 @@ using namespace std;
 int pow() {
 
     int x, y;
-    cin >> x >> y;
+    cout << "Value of X = ";
+    cin >> x ;
+
+    cout << "Value of Y = ";
+    cin >> y ;
+
     int ans = 1;
 
     for(int i = 1; i<=y; i++) {
@@ -45,3 +54,10 @@ int main() {
 
     return 0;
 }
+
+/*
+    Output :
+            Value of X = 3
+            Value of Y = 5
+            Answer is 243
+*/

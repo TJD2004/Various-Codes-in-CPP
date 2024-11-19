@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
 
-//reverse number
+/*
+    Code to Reverse Enter Number 
+*/
+
 int main() {
     int n;
+    cout << "Enter Number : ";
     cin >> n;
 
     int number = 0;
@@ -13,7 +17,13 @@ int main() {
             number = number * 10 + remainder;
            
         }
-        cout << number;
+        cout << "Reverse of Enter Number is : "  << number;
         return 0;
 
-}        
+}
+
+/*
+    Output :
+            Enter Number : 345673
+            Reverse of Enter Number is : 376543
+*/

@@ -1,25 +1,28 @@
 #include <iostream>
 using namespace std;
 
+
+/*
+   Code To Print Element Of Array (Int & Char) using For loop And Function
+*/
 void printArray( int arr[], int size){
    
-   cout <<"Printing the array "<<endl;
     for(int i = 0; i<size; i++ ){
 
         cout << arr[i] << " ";
     }
     cout << endl;
-    cout << "Printing Done"<<endl;
+    
 }
  
 void charArray(char ch[], int size){
 
-    cout <<"Printing the array "<<endl;
+    
     for(int i = 0; i<size; i++){
         cout << ch[i] <<" ";
     }
     cout << endl;
-    cout << "Printing Done";
+
 
 }
 int main() {
@@ -32,3 +35,9 @@ int main() {
 
     return 0;
 }
+
+/*
+     Output :
+             2 3 4 0 0 
+             a b k f j * % 
+*/

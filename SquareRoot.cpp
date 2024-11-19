@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+/*
+    Code to Find Square Root of Any Number
+*/
+
 // int SquareRoot(int x) {
 
 //     int i = 1;
@@ -72,12 +76,19 @@ double morePrecision(int n, int precision, int tempSol){
 int main() {
 
     int x;
+    cout << "Enter Number : ";
     cin >> x;
 
     // cout << BinarySearch(x);
 
     int tempSol = sqrInteger(x);
-    cout << morePrecision(x, 3, tempSol);
+    cout <<"Square Root of Enter number is : " << morePrecision(x, 3, tempSol);
 
     return 0;
 }
+
+/*
+    Output : 
+            Enter Number : 34
+            Square Root of Enter number is :  5.83
+*/

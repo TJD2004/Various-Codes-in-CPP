@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+/*
+	Code to find Unique Element in Array 
+*/
+
+
 
 int main() {
 
@@ -13,8 +18,14 @@ int main() {
         ans = ans^arr[i];
         
     }
-    cout << ans;
+    cout << "Unique Element in Given Array is : " << ans;
 
     return 0;
 
 }
+
+/*
+	Output : 
+            Unique Element in Given Array is : 4
+*/
+
