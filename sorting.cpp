@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+    Code For Sorting Element in array
+*/
+
 void printArray(int arr[], int n) {
     for(int i= 0; i<n; i++) {
         cout << arr[i] << " ";
@@ -35,3 +39,8 @@ int main() {
 
     return 0;
 }
+
+/*
+    Output :
+            3 4 5 6 8
+*/
