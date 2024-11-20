@@ -13,7 +13,7 @@ void printArray(int arr[], int n) {
 }
 
 
-void sorting(int arr[] , int size) {
+void sortingArray(int arr[] , int size) {
 
     for(int i = 0; i<size-1 ; i++) {
 
@@ -34,7 +34,7 @@ int main() {
 
     int arr[8] = {4, 6, 3, 5, 8};
 
-    sorting(arr, 5 );
+    sortingArray(arr, 5 );
     printArray(arr, 5);
 
     return 0;
