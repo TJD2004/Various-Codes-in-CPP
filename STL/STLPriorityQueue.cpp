@@ -22,6 +22,8 @@ int main() {
     mini.push(13);
     mini.push(10);
 
+    cout<<"Size : "<<mini.size()<<endl;
+
     for(int i=0; i<n; i++){
         cout<<maxi.top()<<" ";
         mini.pop();

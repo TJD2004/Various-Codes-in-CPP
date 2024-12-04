@@ -10,4 +10,6 @@ int main() {
     s.push("Dharmik");
 
     cout<<"Top Element is : "<<s.top()<<endl;
+    cout<<"Size : "<<s.size()<<endl;
+    cout<<"Empty or not"<<s.empty()<<endl;
 }

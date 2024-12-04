@@ -13,6 +13,11 @@ int main() {
         cout<<i<<" ";
     } 
 
+    cout<<"Size : "<<d.size()<<endl;
+    cout<<"Element at 2nd Index : "<<d.at(2)<<endl;
+    cout<<"First : "<<d.front()<<endl;
+    cout<<"Last : "<<d.back()<<endl;
+
     d.pop_front();
     d.pop_back();
 

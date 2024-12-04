@@ -12,6 +12,9 @@ int main() {
     for(int i:l){
         cout<<i<<" ";
     } 
+    cout<<"Size : "<<l.size()<<endl;
+    cout<<"First : "<<l.front()<<endl;
+    cout<<"Last : "<<l.back()<<endl;
 
     l.pop_front();
     l.pop_back();
