@@ -28,6 +28,23 @@ bool palindrom(char name[], int n){
     return 1;
 }
 
+bool checkPalindrom(string o){
+
+    int s =0;
+    int e = o.length()-1;
+    while(s<=e){
+        if(toLowerCase(o[s]) != toLowerCase(o[e])) {
+            return 0;
+        }
+        else
+        {
+            s++;
+            e--;
+        }
+    }
+    return 1;
+}
+
 
 
 int getLength(char name[]) {
