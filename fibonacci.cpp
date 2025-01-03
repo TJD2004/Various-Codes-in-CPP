@@ -16,7 +16,7 @@ int main() {
     cout<<a<<" "<<b<<" ";
 
     for(int i = 1; i<+n; i++){
-        int nextnumber = a +b;
+        int nextnumber = a + b;
         cout<<nextnumber<<" ";
 
         a = b;
