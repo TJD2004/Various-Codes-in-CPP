@@ -22,9 +22,9 @@ int main() {
         } else if (s[i] == '0' && s[i + 1] == '1') {  
             temp += 'T';  // Append 'T'  
         } else if (s[i] == '1' && s[i + 1] == '0') {  
-            temp += 'G';  // Append 'G'  
+            temp += 'C';  // Append 'G'  
         } else if (s[i] == '1' && s[i + 1] == '1') {  
-            temp += 'C';  // Append 'C'  
+            temp += 'G';  // Append 'C'  
         }  
     }  
 
