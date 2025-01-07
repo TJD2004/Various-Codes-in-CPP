@@ -2,6 +2,8 @@
 #include <string>  
 using namespace std;  
 
+/*  Program on Binary number string DNA pattern  */
+
 int main() {  
     string s;  
     cout << "Enter DNA number: ";  
