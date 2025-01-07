@@ -11,10 +11,8 @@ bool checkEqual( int a[26], int b[26])
     return 1;
 }
 
-int main()
+bool PermutationInString( string s1, string s2)
 {
-    string s1, s2;
-    cin >> s1 >> s2;
 
     int count1[26] = {0};
     
@@ -33,11 +31,8 @@ int main()
         i++;
     }
 
-    if( checkEqual(count1, count2)) {
-        cout << "Permutation is exist";
-    } else {
-        cout << "Permutation is not exist";
-    }
+    if( checkEqual(count1, count2)) 
+        return 1;
 
     while(i < s2.length() ) {
         char newChar = s2[i];
@@ -49,13 +44,21 @@ int main()
         count2[index]--;
         i++;
 
-        if( checkEqual(count1, count2)) {
-            cout << "Permutation is exist";
-        } else {
-            cout << "Permutation is not exist";
-        }
+        if( checkEqual(count1, count2)) 
+            return 1;
     }
 
     return 0;
-    
+}
+
+int main()
+{
+    string s1, s2;
+    cin >> s1 >> s2;
+
+    if(PermutationInString(s1, s2)) {
+        cout << "Premutation is exist";
+    } else {
+        cout << "Premutation is not exist";
+    }
 }
