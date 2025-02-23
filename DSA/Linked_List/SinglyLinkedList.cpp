@@ -118,24 +118,6 @@ void deleteNode(int position, Node* & head) {
     }
 }
 
-bool isCircularList(Node* head) {
-    //empty list
-    if(head == NULL) {
-        return true;
-    }
-
-    Node* temp = head -> next;
-    while(temp != NULL && temp != head ) {
-        temp = temp -> next;
-    }
-
-    if(temp == head ) {
-        return true;
-    }
-
-    return false;
-}
-
 
 bool detectLoop(Node* head) {
 
@@ -271,17 +253,6 @@ int main() {
 
     removeLoop(head);
     print(head);
-
-    /*
-    print(head);
-
-    if(isCircularList(head)) {
-        cout << " Linked List is Circular in nature" << endl;
-    }
-    else{
-        cout << "Linked List is not Circular " << endl;
-    }
-    */
 
 
     return 0;
