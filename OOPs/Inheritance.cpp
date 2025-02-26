@@ -34,7 +34,7 @@ class Male: private Human {
     }
 
     int getHeight() {
-        return this->height;
+        return this-> height;
     }
 
 };
