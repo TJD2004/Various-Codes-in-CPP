@@ -1,89 +1,97 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Queue {
-public:
-    int *arr;
-    int front;
-    int top;
+    
+    int* arr;
+    int qfront;
+    int rear; 
     int size;
-
-    // Constructor to initialize the queue
-    Queue(int size) {
-        this->size = size;
+    
+public:
+    Queue() {
+        size = 100001;
         arr = new int[size];
-        top = -1; 
-        front = 0; 
+        qfront = 0;
+        rear = 0;
     }
 
-    // Push operation: Add an element to the queue
-    void push(int d) {
-        if (top == size - 1) {
-            cout << "Queue is full!" << endl;
-        } else {
-            top++;
-            arr[top] = d;  
-        }
-    }
-
-    // Pop operation: Remove the element from the front of the queue
-    void pop() {
-        if (front > top) {  
-            cout << "Queue is empty!" << endl;
-        } else {
-            front++; 
-        }
-    }
-
-    // Peek operation: Return the front element of the queue
-    int peek() {
-        if (front > top) { 
-            cout << "Queue is empty!" << endl;
-            return -1;  
-        }
-        return arr[front]; 
-    }
+    /*----------------- Public Functions of Queue -----------------*/
 
     bool isEmpty() {
-        return (front > top); 
+        if(qfront == rear) {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
+    void enqueue(int data) {
+        if(rear == size)
+            cout << "Queue is Full" << endl;
+        else
+        {
+            arr[rear] = data;
+            rear++;
+        }
+    }
+
+    int dequeue() {
+        if(qfront == rear) {
+            return -1;
+        }
+        else
+        {	int ans = arr[qfront];
+            arr[qfront] = -1;
+            qfront++;
+            if(qfront==rear){
+                qfront = 0;
+                rear = 0;
+            }
+         return ans;
+        }
+    }
+
+    int front() {
+        if(qfront == rear) {
+            return -1;
+        }
+        else
+        {
+            return arr[qfront];
+        }
+    }
+
+    int getSize() {
+        if(qfront == rear) {
+            return 0;
+        }
+        else
+        {
+            return rear;
+        }
+    }
 };
 
 int main() {
+    Queue q;
 
-    Queue q(5);  
-    q.push(5);
-    q.push(4);
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
 
-    cout << "Peek after pushing 5 and 4: " << q.peek() << endl;
+    cout << "Front element: " << q.front() << endl;
+    cout << "Queue size: " << q.getSize() << endl;    
 
-    q.pop(); 
+    q.dequeue();
+    cout << "Front element after dequeue: " << q.front() << endl; 
+    cout << "Queue size after dequeue: " << q.getSize() << endl;  
 
-    cout << "Peek after popping one element: " << q.peek() << endl;
-
-    q.push(6);
-    q.push(8);
-
-    cout << "Peek after pushing 6 and 8: " << q.peek() << endl; 
-
-    q.pop();  
-
-    cout << "Peek after popping another element: " << q.peek() << endl; 
-
-    if (q.isEmpty()) {
-        cout << "Queue is empty" << endl;
-    } else {
-        cout << "Queue is not empty" << endl;
-    }
-
-    q.pop();  
-
-    if (q.isEmpty()) {
-        cout << "Queue is empty" << endl;  
-    } else {
-        cout << "Queue is not empty" << endl;
-    }
+    q.dequeue();
+    q.dequeue();
+    cout << "Queue empty: " << (q.isEmpty() ? "true" : "false") << endl;
 
     return 0;
 }

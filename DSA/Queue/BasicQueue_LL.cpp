@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Node {
@@ -7,79 +7,98 @@ public:
     Node* next;
 
     Node(int data) {
-        this -> data = data;
-        this -> next = NULL;
+        this->data = data;
+        this->next = nullptr;
     }
 };
 
 class Queue {
-public:
-    Node* top;
+private:
     Node* front;
+    Node* rear;
+    int size;
 
+public:
+    // Constructor
     Queue() {
-        top = NULL;
         front = NULL;
+        rear = NULL;
+        size = 0;
     }
 
-    void push(int d) {
-        Node* newNode = new Node(d);
-        if (top == NULL) {
-            top = front = newNode;
+    // Function to add an element to the queue
+    void enqueue(int data) {
+        Node* newNode = new Node(data);
+
+        if (rear == NULL) {
+            front = rear = newNode;
         } else {
-            top->next = newNode;
-            top = newNode;
+            rear->next = newNode;  
+            rear = newNode;        
         }
+        size++;
     }
 
-    void pop() {
-        if (front != NULL) {
-            Node* temp = front;
-            front = front->next;
-            delete temp;
-        } else {
+    // Function to remove an element from the queue
+    void dequeue() {
+        if (front == NULL) {
             cout << "Queue is empty!" << endl;
+            return;
         }
+
+        Node* temp = front;
+        front = front->next;  
+        if (front == NULL) {
+            rear = NULL; 
+        }
+        delete temp; 
+        size--;
     }
 
-    int peek() {
-        if (front != NULL) {
-            return front->data;
-        } else {
+    // Function to get the element at the front of the queue
+    int getFront() {
+        if (front == NULL) {
             cout << "Queue is empty!" << endl;
-            return -1;
+            return -1; 
         }
+        return front->data;
     }
 
+    // Function to check if the queue is empty
     bool isEmpty() {
         return front == NULL;
+    }
+
+    // Function to get the size of the queue
+    int getSize() {
+        return size;
+    }
+
+    // Destructor to clean up memory
+    ~Queue() {
+        while (!isEmpty()) {
+            dequeue();  
+        }
     }
 };
 
 int main() {
     Queue q;
 
-    q.push(5);
-    q.push(10);
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
 
-    cout << q.peek() << endl;
+    cout << "Front element: " << q.getFront() << endl;
+    cout << "Queue size: " << q.getSize() << endl;    
 
-    q.pop();
+    q.dequeue();
+    cout << "Front element after dequeue: " << q.getFront() << endl; 
+    cout << "Queue size after dequeue: " << q.getSize() << endl;  
 
-    cout << q.peek() << endl; 
-
-    q.push(15);
-
-    cout << q.peek() << endl; 
-
-    q.pop();
-    q.pop();
-
-    if (q.isEmpty()) {
-        cout << "Queue is empty" << endl; 
-    } else {
-        cout << "Queue is not empty" << endl;
-    }
+    q.dequeue();
+    q.dequeue();
+    cout << "Queue empty: " << (q.isEmpty() ? "true" : "false") << endl;
 
     return 0;
 }
