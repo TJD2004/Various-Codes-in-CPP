@@ -14,31 +14,29 @@ public:
 
 class Stack {
 public:
-    Node* top;  // Points to the top of the stack
+    Node* top; 
 
     Stack() {
-        top = NULL;  // Initialize an empty stack
+        top = NULL; 
     }
 
-    // Push a new value onto the stack
     void push(int d) {
-        Node* newNode = new Node(d);  // Create a new node with the given data
-        newNode->next = top;  // Link the new node to the current top
-        top = newNode;  // Update the top pointer to the new node
+        Node* newNode = new Node(d);
+        newNode->next = top; 
+        top = newNode; 
     }
 
-    // Pop the top value from the stack
     void pop() {
         if (top == NULL) {
             cout << "Stack Underflow" << endl;
             return;
         }
-        Node* temp = top;  // Store the current top node
-        top = top->next;  // Update the top pointer to the next node
+        Node* temp = top;  
+        top = top->next; 
         delete temp;
     }
 
-    // Peek at the top value of the stack
+
     int peek() {
         if (top != NULL) {
             return top->data;
@@ -48,7 +46,7 @@ public:
         }
     }
 
-    // Check if the stack is empty
+  
     bool isEmpty() {
         return top == NULL;
     }

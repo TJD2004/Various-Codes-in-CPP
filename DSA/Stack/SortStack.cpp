@@ -20,18 +20,18 @@ void sortedInsert(stack<int> &stack, int num) {
 
 void sortStack(stack<int> &stack)
 {
-		//base case
-    	if(stack.empty()) {
-            return ;
-        }
+	//base case
+    if(stack.empty()) {
+        return ;
+    }
     
-    	int num = stack.top();
-    	stack.pop();
+    int num = stack.top();
+    stack.pop();
     
-    	//recursive call
-    	sortStack(stack);
+    //recursive call
+    sortStack(stack);
     
-    	sortedInsert(stack, num);
+    sortedInsert(stack, num);
 }
 
 int main() {

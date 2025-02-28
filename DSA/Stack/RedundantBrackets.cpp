@@ -12,9 +12,7 @@ bool findRedundantBrackets(string &s)
             st.push(ch);
         }
         else
-        {
-            //ch ya toh ')' hai or lowercase letter
-            
+        {   
             if(ch == ')') {
                 bool isRedundant = true;
                 

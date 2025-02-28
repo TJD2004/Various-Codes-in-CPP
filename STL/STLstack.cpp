@@ -2,6 +2,8 @@
 #include<stack>
 using namespace std;
 
+/*  Last in First Out (LIFO)  */
+
 int main() {
     stack<string>s;
 

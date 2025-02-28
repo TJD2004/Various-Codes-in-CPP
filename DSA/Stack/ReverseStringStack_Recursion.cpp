@@ -2,17 +2,16 @@
 #include <stack>
 using namespace std;
 
-void reverseString(stack<char>& s, char str[], int index, int length) {
+void reverseString(stack<char>& s, char str[], int index) {
     // Base case
-    if (index == length) {
+    if (str[index] == '\0') {
         return;
     }
 
-    // Push the current character onto the stack
     s.push(str[index]);
 
     // Recursive call
-    reverseString(s, str, index + 1, length);
+    reverseString(s, str, index + 1);
 }
 
 void printReversedString(stack<char>& s) {
@@ -23,20 +22,14 @@ void printReversedString(stack<char>& s) {
 }
 
 int main() {
-    
     char str[100];
     cout << "Enter a string: ";
     cin >> str;
 
-    int length = 0;
-    while (str[length] != '\0') {
-        length++;
-    }
-
     stack<char> s;
 
     // Reverse the string using recursion
-    reverseString(s, str, 0, length);
+    reverseString(s, str, 0);
 
     cout << "Reversed string: ";
     printReversedString(s);

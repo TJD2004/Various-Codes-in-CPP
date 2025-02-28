@@ -2,6 +2,8 @@
 #include<queue>
 using namespace std;
 
+/*  First In First Out (FIFO)  */
+
 int main() {
     queue<string>q;
     queue<string>mini;
