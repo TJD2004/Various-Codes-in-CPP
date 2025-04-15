@@ -578,7 +578,7 @@ int main() {
 
         col =1;
         while(col<=n-row+1){
-            cout<<col<<" ";
+            cout<<n-col-row+2<<" ";
             col++;
         }
         cout<<endl;
